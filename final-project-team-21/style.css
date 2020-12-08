@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#header {
+    color: #2D1FA3;
+    font-family: aladin;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 1.5px;
+    text-decoration: line-through;
+    border-bottom: 10px solid #060000;
+}
+#content {
+    color: #12B2F5;
+}
