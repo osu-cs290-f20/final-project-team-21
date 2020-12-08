@@ -1,6 +1,6 @@
 var path = require('path');
 var express = require('express');
-var exphbs=require('express-handlebars');
+var exphbs = require('express-handlebars');
 
 console.log('Data:',Database);
 var app = express();
