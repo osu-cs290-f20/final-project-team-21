@@ -49,13 +49,6 @@ header {
   margin: 0;
 }
 
-#main-context {
-  width: 1300px;
-  height: 800px;
-  background: url(home_page.jpg) ; 
-  background-size: cover;
-}
-
 .main-text {
   text-align: center;
   font-size: 72px;
@@ -85,12 +78,7 @@ header {
 #main-context {
   width: 1300px;
   height: 800px;
-  /* background-color: aqua; */
-  background: url(create_page.jpg) ; 
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
-  background-size: cover;
+ background-size: cover;
 }
 
 .content-part {
