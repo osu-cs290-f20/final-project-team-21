@@ -1,0 +1,75 @@
+body {
+  background:lightblue;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  color:white;
+  height:100%;
+  text-align:center;
+  font-size:18px;
+}
+
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:35px;
+  height:30px;
+  padding-top:10px;
+  background:lightseagreen;
+  color:blue;
+  cursor:pointer;
+  border: solid 1px red;
+
+}
+
+#alphabet li:hover {
+    background:red;
+    border: solid 1px white;
+    color:white;
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+
+#mylives{
+  font-size:1.6em;
+  text-align:center;
+  display:block;
+}
+
+.buttons{
+  background:greenyellow;
+  color:greenyellow;
+  border: solid 1px greenyellow;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1.2em;
+  padding:18px 10px;
+  width:180px;
+  margin: 10px;
+  outline: none;
+  
+}
+
+.butons:hover {
+    background:red;
+    border: solid 1px red;
+    color:red;
+}
+
+.active {
+    opacity: 0.2;
+  }
