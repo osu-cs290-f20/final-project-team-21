@@ -65,6 +65,7 @@
       }
     }
   
+    
      
     // OnClick Function
      check = function () {
@@ -89,10 +90,19 @@
     }
     
     // Play
+    var sampledata=document.getElementsByClassName('array_text');
+    // console.log("test jave java\n");
+    var container=[];
+    var i;
+    for(i=0; i<sampledata.length;i++)
+    {
+      container.push(sampledata[i].innerHTML);
+    }
+    console.log(container);
     play = function () {
       categories = [
-          ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
-          ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"],
+          // ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"]
+          container
       ];
   
       chosenCategory = categories[Math.floor(Math.random() * categories.length)];
