@@ -32,6 +32,10 @@ app.get('/play',function(req,res,next){
   res.status(200).render('play_main');
 });
 
+app.get('/enter',function(req,res,next){
+  res.status(200).render('enter_code');
+});
+
 app.get('/done',function(req,res,next){
   res.status(200).render('play_done');
 });
