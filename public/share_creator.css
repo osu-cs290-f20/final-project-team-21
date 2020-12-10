@@ -57,14 +57,10 @@ header {
 
 #coding {
   color: black;
-  font-size: 23px;
+  font-size: 50px;
   display: block;
   align-items: center;
   position: relative;
-  left: 55%;
-  top: 27%;
-}
-#code_element {
-  top: 70%;
-
+  left: 45%;
+  top: 60%;
 }
