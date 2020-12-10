@@ -34,7 +34,7 @@
      result = function () {
       wordDisplayer = document.getElementById('display');
       correct = document.createElement('ul');
-  
+      
       for (var i = 0; i < word.length; i++) {
         correct.setAttribute('id', 'my-word');
         guess = document.createElement('li');
@@ -92,17 +92,17 @@
     // Play
     var sampledata=document.getElementsByClassName('array_text');
     // console.log("test jave java\n");
-    var container=[];
+    var container;
     var i;
-    for(i=0; i<sampledata.length;i++)
-    {
-      container.push(sampledata[i].innerHTML);
-    }
-    console.log(container);
+    
+    container=sampledata[0].innerHTML;
+    var blank=container.split(",");
+    console.log(blank);
+    
     play = function () {
       categories = [
           // ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"]
-          container
+          blank
       ];
   
       chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -129,7 +129,5 @@
       context.clearRect(0, 0, 400, 400);
       play();
     }
-  
-  
   
   
