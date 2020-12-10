@@ -73,3 +73,8 @@
 .active {
     opacity: 0.2;
   }
+
+#play-main {
+  color: white;
+  font-size: 40px;
+}
