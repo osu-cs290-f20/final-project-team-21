@@ -1,7 +1,9 @@
 var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
+var data = require('./database.json');
 
+// console.log(data[1].words);
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -26,6 +28,14 @@ app.get('/create',function(req,res,next){
 
 app.get('/share',function(req,res,next){
   res.status(200).render('share_creator');
+});
+
+app.get('/:n',function(req,res,next){
+  var n_array=req.params.n;
+  if(data[n_array])
+  res.status(200).render('play_main',data[n_array]);
+  else
+  next();
 });
 
 app.get('/play',function(req,res,next){
