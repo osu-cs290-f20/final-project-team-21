@@ -73,3 +73,21 @@
 .active {
     opacity: 0.2;
   }
+
+#play-main {
+  color: white;
+  font-size: 40px;
+}
+
+#invisible_text_data {
+    display: none;
+}
+
+.hidden_done {
+  display: none;
+}
+
+.one {
+  margin: 0 auto;
+}
+

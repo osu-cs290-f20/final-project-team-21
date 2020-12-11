@@ -1,21 +1,47 @@
 
-        <div class="main-context" id="main-context" style="background: url(bg.jpg);">
+     <div class="main-context" id="main-context" style="background: url(bg.jpg);">
         <section id="play-main">
-          <h3>Score: </h3>
-          <h3>Time: </h3>
+          <h3 style="text-align: center;" id="score"></h3>
           
-          <p id="lives"></p>
+          <p style="text-align: center;" id="lives"></p>
           
-          <div id="display">
+          <div style="text-align: center;" id="display">
           </div>
-  
+
+          <div id="invisible_text_data">
+                       <h1 class="array_text">{{words}}</h1>
+          </div>
+
           <div class="image">
-            <img src="benny.jpg" alt="main image">
+            <img src="1.jpg" id="one" alt="main image">
+            <img src="2.jpg" id="two" alt="main image">
+            <img src="3.jpg" id="three" alt="main image">
+            <img src="4.jpg" id="four" alt="main image">
+            <img src="5.jpg" id="five" alt="main image">
+            <img src="6.jpg" id="six" alt="main image">
+            <img src="7.jpg" id="seven" alt="main image">
+
+   
           </div>
   
           <div id="buttons">
           </div>  
   
-      </section>
-      </div>
- 
+        </section>
+      
+
+        <section id="content-part" class="hidden_done">
+        
+          <div class="main-context" id="main-context" style="background: url(play_done.jpg);">
+            <h2 >Your score: XX</h2>
+            <!-- <p id="score"></p> -->
+            <div class="play_done_button" id="play_done_button">
+              <button id="go_main" class="go-main">Go to main</button>
+              <button id="play_again" class="play-again">Play agian</button>
+            </div>
+        
+
+          </div>
+
+        </section>
+</div>

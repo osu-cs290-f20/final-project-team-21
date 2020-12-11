@@ -1,13 +1,72 @@
-{
-    "1": {
-      "word_count": "5",
-      "time": "5",
-      "words": [
-        "apple",
-        "beta",
-        "charles",
-        "delta",
-        "echo"
-      ]
-    }
-}
+[
+  {
+    "word_count": "5",
+    "words": [
+      "apple",
+      "beta",
+      "charles",
+      "delta",
+      "echo"
+    ]
+  },
+  {
+    "word_count": "5",
+    "words": [
+      "echo",
+      "zulu",
+      "yankee",
+      "beta",
+      "foxtrot"
+    ]
+  },
+  {
+    "word_count": "5",
+    "words": [
+      "papa",
+      "mike",
+      "november",
+      "kilo",
+      "romeo"
+    ]
+  },
+  {
+    "word_count": "5",
+    "words": [
+      "golf",
+      "tango",
+      "oscar",
+      "sierra",
+      "victor"
+    ]
+  },
+  {
+    "word_count": "5",
+    "words": [
+      "papa",
+      "kilo",
+      "qubec",
+      "leema",
+      "belta"
+    ]
+  },
+  {
+    "word_count": "5",
+    "words": [
+      "yakee",
+      "romeo",
+      "oscar",
+      "echo",
+      "alpha"
+    ]
+  },
+  {
+    "word_count": "5",
+    "words": [
+      "geo",
+      "ghto",
+      "tagoo",
+      "kango",
+      "toe"
+    ]
+  }
+]
