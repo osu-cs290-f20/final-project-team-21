@@ -111,12 +111,22 @@
   font-size: 100px;
 }
 
+/*.image-type {*/
+/*  width: auto;*/
+/*  height: 650px;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  position: absolute;*/
+/*  left: 12.5%;*/
+/*  top: 12%;*/
+/*}*/
+
 .image-type {
   width: auto;
-  height: 650px;
+  height: 390px;
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 12.5%;
-  top: 12%;
+  position: relative;
+  left: 45%;
+  top: 0%;
 }
