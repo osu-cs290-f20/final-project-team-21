@@ -207,3 +207,9 @@ all = function() {
 
 }
 all();
+
+var gohome_button=document.getElementById('go_main');
+gohome_button.onclick=function() {
+  var home_button=document.getElementById('link_home');
+    home_button.click();
+}
