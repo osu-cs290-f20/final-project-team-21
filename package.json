@@ -10,9 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "pep": "npm install express",
-    "prepep": "npm install handlebars",
-    "preprepep": "npm install express-handlebars"
+    "req": "npm i -S express nodemon handlebars express-handlebars"
   },
   "repository": {
     "type": "git",
