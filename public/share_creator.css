@@ -56,11 +56,11 @@ header {
 }
 
 #coding {
-  color: black;
-  font-size: 50px;
+  color: white;
+  font-size: 55px;
   display: block;
   align-items: center;
   position: relative;
-  left: 45%;
+  left: 15%;
   top: 60%;
 }
