@@ -1,17 +1,17 @@
-    var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+all = function() {
+  var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
           'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
           't', 'u', 'v', 'w', 'x', 'y', 'z'];
     
-    var word ;              // Selected word
-    var guess ;             // Geuss
+    var word;              // Selected word
+    var guess;             // Geuss
     var geusses = [ ];      // Stored geusses
-    var lives ;             // Lives
-    var counter ;           // Count correct geusses
+    var lives;             // Lives
+    var counter;           // Count correct geusses
     var space;              // Number of spaces in word '-'
   
     // Get elements
     var livesDisplayer = document.getElementById("lives");
-  
 
     // create alphabet ul
     var buttons = function () {
@@ -34,7 +34,7 @@
      result = function () {
       wordDisplayer = document.getElementById('display');
       correct = document.createElement('ul');
-      
+  
       for (var i = 0; i < word.length; i++) {
         correct.setAttribute('id', 'my-word');
         guess = document.createElement('li');
@@ -55,12 +55,45 @@
     // Show lives
      comments = function () {
       livesDisplayer.innerHTML = "You have " + lives + " lives";
+
+          //   if (time <= 0) {
+    //     //stop game
+    //     //you lose
+    // go to next page 
+    //   }
+  
+    //   else {
+    //     //play game
+    //     if (lives < 1) {
+    //       //stop game
+    //       //you lose
+    // go to next page 
+    //     }
+  
+    //     else {
+    //       if (you correct all and you have next question) {
+    //         //go to the next question.
+    //         //make lives reset again.
+    //         //do recursive
+    //         //reset
+    //       }
+    //       else if (you correct all and you do not have anymore) {
+    //         //finish everything
+    // go to next page 
+    //       }
+    //     }
+    //   }
+    // }
+
       if (lives < 1) {
         livesDisplayer.innerHTML = "Game Over";
       }
       for (var i = 0; i < geusses.length; i++) {
         if (counter + space === geusses.length) {
-          livesDisplayer.innerHTML = "You Win!";
+          // livesDisplayer.innerHTML = "You Win!";
+          correct.parentNode.removeChild(correct);
+          letters.parentNode.removeChild(letters);
+          play();
         }
       }
     }
@@ -90,44 +123,87 @@
     }
     
     // Play
-    var sampledata=document.getElementsByClassName('array_text');
-    // console.log("test jave java\n");
+    var sampledata = document.getElementsByClassName('array_text');
     var container;
-    var i;
     
-    container=sampledata[0].innerHTML;
-    var blank=container.split(",");
+    container = sampledata[0].innerHTML;
+    var blank = container.split(",");
     console.log(blank);
-    
+
+
     play = function () {
-      categories = [
-          // ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"]
-          blank
-      ];
-  
-      chosenCategory = categories[Math.floor(Math.random() * categories.length)];
-      word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
+
+      word = blank[Math.floor(Math.random() * blank.length)];
+
+      // delete blank[role]
+      const index=blank.indexOf(word);
+      if(index > -1) {
+        blank.splice(index, 1);
+      }
+
       word = word.replace(/\s/g, "-");
       console.log(word);
-      buttons();
-  
+    
       geusses = [ ];
       lives = 10;
       counter = 0;
       space = 0;
+
+      buttons();
       result();
       comments();
+
     }
-  
+
     play();
-    
-     // Reset
+
+    // Reset
   
-    document.getElementById('reset').onclick = function() {
+    next_Q = function() {
       correct.parentNode.removeChild(correct);
       letters.parentNode.removeChild(letters);
-      context.clearRect(0, 0, 400, 400);
       play();
     }
   
+
+    // whole_play = function () {
+
+    //   if (time <= 0) {
+    //     //stop game
+    //     //you lose
+    //   }
   
+    //   else {
+    //     //play game
+    //     if (lives <= 0) {
+    //       //stop game
+    //       //you lose
+    //     }
+  
+    //     else {
+    //       if (you correct and you have next question) {
+    //         //go to the next question.
+    //         //make lives reset again.
+    //         //do recursive
+    //         //reset
+    //       }
+    //       else if (you correct and you do not have anymore) {
+    //         //finish everything
+    //       }
+    //     }
+    //   }
+    // }
+
+    //whole_play();
+
+  
+  
+  
+
+
+
+
+
+
+}
+all();
