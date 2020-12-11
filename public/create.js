@@ -1,7 +1,7 @@
 var input_words=document.getElementById("filter-words");
 var inputs_selectedwords=input_words.options[input_words.selectedIndex].value;
 // var data = require('./../database.json');
-
+var coder=0;
 
 // var checkWord = require('check-word/index.js');
 // var words     = checkWord('en');
@@ -97,6 +97,7 @@ done_button.onclick=function(){
 
     if(word_array>=inputs_selectedwords)
     {
+        coder++;
         var postRequest = new XMLHttpRequest();
         var reqURL = "/create/add";
         postRequest.open('POST', reqURL);
@@ -131,12 +132,15 @@ done_button.onclick=function(){
         var new_code=document.createElement('h5');
         new_code.classList.add('code-element');
         // var text_code=document.createTextNode("code: "+code_number);
-        var text_code=document.createTextNode("code: xxxxx");
+        var text_code=document.createTextNode("code: "+coder);
         new_code.appendChild(text_code);
         var new_url=document.createElement('h5');
         new_url.classList.add('code-element');
         // var text_url=document.createTextNode("url: "+window.location.href+"/"+code_number);
-        var text_url=document.createTextNode("url: "+window.location.href+"/xx");
+        var current_url=window.location.href;
+        var array_url=current_url.split("/");
+        var final_url=array_url[0]+"//"+array_url[2]+"/"+coder;
+        var text_url=document.createTextNode("url: "+final_url);
         new_url.appendChild(text_url);
         addingpharse.appendChild(new_code);
         addingpharse.appendChild(new_url);
@@ -148,5 +152,6 @@ done_button.onclick=function(){
         sp.style.display="flex";
     }
 }
+
 
 
