@@ -153,5 +153,11 @@ done_button.onclick=function(){
     }
 }
 
+var cancel_button=document.getElementById('cancel')
+cancel_button.onclick=function()
+{
+    var home_button=document.getElementById('link_home');
+    home_button.click();
+}
 
 
