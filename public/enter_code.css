@@ -2,3 +2,32 @@
   .middle {
     text-align: center;
   }
+
+  #linker {
+    text-decoration: underline;
+    color:blue;
+    align-items: center;
+    position: relative;
+    left: 0%;
+    top: 57%;
+    font-size: 40px;
+  }
+
+  #enter-sec {
+    font-size: 35px;
+    color: white;
+    align-items: center;
+    position: relative;
+    left: 15%;
+    top: 55%;
+  }
+
+  #input-go {
+    width: 500px;
+    /* height: 42px; */
+    font-size: 30px;
+  }
+
+  #go-button {
+    font-size: 30px;
+  }
