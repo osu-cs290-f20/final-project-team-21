@@ -14,7 +14,7 @@ all = function() {
     // Get elements
     var livesDisplayer = document.getElementById("lives");
     var scoreDisplayer = document.getElementById("score");
-
+    var scoreDisplayer_2 = document.getElementById("score_done");
     // create alphabet ul
     var buttons = function () {
       myButtons = document.getElementById('buttons');
@@ -91,6 +91,7 @@ all = function() {
         var dis_2=document.getElementById('content-part');
         dis_1.style.display="none";
         dis_2.style.display="block";
+        scoreDisplayer_2.innerHTML = "Score: " + score;
       }
       else if (lives == 7) {
         hiding();
